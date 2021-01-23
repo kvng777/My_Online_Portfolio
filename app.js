@@ -598,7 +598,7 @@ window.addEventListener("resize", function() {
       <div class="container">
       <h5 class="pt-2">Portfolio</h5>
       <div id="carouselTabs" class="carousel slide" data-bs-ride="carousel">
-          <ol class="carousel-indicators">
+          <ol class="carousel-indicators text-black">
           <li data-bs-target="#carouselTabs" data-bs-slide-to="0" class="active"></li>
           <li data-bs-target="#carouselTabs" data-bs-slide-to="1"></li>
           <li data-bs-target="#carouselTabs" data-bs-slide-to="2"></li>
@@ -614,7 +614,7 @@ window.addEventListener("resize", function() {
                       <h6 class="card-title">Registraion Form</h6>
                           <span class="badge rounded-pill bg-primary">HTML</span>
                           <span class="badge rounded-pill bg-secondary">CSS</span>
-                          <button class="btn bg-primary text-white fs-6 mt-3 d-block">Visit Site</button>
+                          <button class="btn bg-primary text-white fs-6 my-3 d-block">Visit Site</button>
                       </div>
                   </div>
               </div>
@@ -628,7 +628,7 @@ window.addEventListener("resize", function() {
                           <span class="badge rounded-pill bg-secondary">CSS</span>
                           <span class="badge rounded-pill bg-success">JS</span>
                           <span class="badge rounded-pill bg-warning">SASS</span>
-                          <button class="btn bg-primary text-white fs-6 mt-3 d-block">Visit Site</button>
+                          <button class="btn bg-primary text-white fs-6 my-3 d-block">Visit Site</button>
                       </div>
                   </div>
               </div>
@@ -641,7 +641,7 @@ window.addEventListener("resize", function() {
                           <span class="badge rounded-pill bg-primary">HTML</span>
                           <span class="badge rounded-pill bg-secondary">CSS</span>
                           <span class="badge rounded-pill bg-success">JS</span>
-                          <button class="btn bg-primary text-white fs-6 mt-3 d-block">Visit Site</button>
+                          <button class="btn bg-primary text-white fs-6 my-3 d-block">Visit Site</button>
                       </div>
                   </div>
               </div>
@@ -655,7 +655,7 @@ window.addEventListener("resize", function() {
                           <span class="badge rounded-pill bg-secondary">CSS</span>
                           <span class="badge rounded-pill bg-success">JS</span>
                           <span class="badge rounded-pill bg-warning">SASS</span>
-                          <button class="btn bg-primary text-white fs-6 mt-3 d-block">Visit Site</button>
+                          <button class="btn bg-primary text-white fs-6 my-3 d-block">Visit Site</button>
                       </div>
                   </div>
               </div>
@@ -669,7 +669,7 @@ window.addEventListener("resize", function() {
                           <span class="badge rounded-pill bg-secondary">CSS</span>
                           <span class="badge rounded-pill bg-success">JS</span>
                           <span class="badge rounded-pill bg-warning">SASS</span>
-                          <button class="btn bg-primary text-white fs-6 mt-3 d-block">Visit Site</button>
+                          <button class="btn bg-primary text-white fs-6 my-3 d-block">Visit Site</button>
                       </div>
                   </div>
               </div>
@@ -683,21 +683,21 @@ window.addEventListener("resize", function() {
                           <span class="badge rounded-pill bg-secondary">CSS</span>
                           <span class="badge rounded-pill bg-success">JS</span>
                           <span class="badge rounded-pill bg-warning">SASS</span>
-                          <button class="btn bg-primary text-white fs-6 mt-3 d-block">Visit Site</button>
+                          <button class="btn bg-primary text-white fs-6 my-3 d-block">Visit Site</button>
                       </div>
                   </div>
               </div>
           </div>
           
               <a class="carousel-control-prev" href="#carouselTabs" role="button" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon inverted" aria-hidden="true"></span>
+                  <span class="carousel-control-prev-icon text-black" aria-hidden="true"></span>
                   <span class="visually-hidden">Previous</span>
               </a>
               <a class="carousel-control-next" href="#carouselTabs" role="button" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="carousel-control-next-icon text-black" aria-hidden="true"></span>
                   <span class="visually-hidden">Next</span>
               </a>
-      </div>
+        </div>
       </div>
       `;
   } else if (window.innerWidth > 425) {
