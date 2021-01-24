@@ -1,5 +1,11 @@
 console.log("JS at work!");
 const carouselView = document.getElementById("portfolio");
+const wechat =  `
+<div class="text-center">
+<h6>Add me on WeChat<h6>
+<img src="images/wechatid.jpg" class="img-fluid" alt="Kevin's WeChat QR Code">
+</div>
+`;
 const smContent = `
 <div class="container">
 <h5 class="pt-2">Portfolio</h5>
@@ -270,20 +276,12 @@ $(document).ready(function(){
       placement : 'top',
       trigger : 'active',
       html : true,
-      content : `
-      <div class="text-center">
-      <h6>Add me on WeChat<h6>
-      <img src="images/wechatid.jpg" class="img-fluid" alt="Kevin's WeChat QR Code">
-      </div>
-      `
+      content : wechat
   });
 });
 
-// select the id where you want to inject the html codes
 
-//Prep code - select target, insert designed code and save it as variable through innerHTML
-
-
+//display of carousel depending on viewport size on load
 window.addEventListener("load", function() {
   if (window.innerWidth >= 320 && window.innerWidth <= 425 ) {
       carouselView.innerHTML = smContent;
@@ -292,6 +290,7 @@ window.addEventListener("load", function() {
   }
 });
 
+//display of carousel depending on viewport size on resize
 window.addEventListener("resize", function() {
   if (window.innerWidth >= 320 && window.innerWidth <= 425 ) {
       carouselView.innerHTML = smContent;
@@ -299,12 +298,3 @@ window.addEventListener("resize", function() {
     carouselView.innerHTML = mdContent;
   }
 });
-
-
-// window.addEventListener("resize", function() {
-//    if(window.innerWidth >= 320 && wdinwo.innerWidth <= 425) {
-//       carouselView.innerHTML = smContent;
-//    } else if (window.innerWidth > 425) {
-//      carouselView.innerHTML = mdContent;
-//    }
-// });
