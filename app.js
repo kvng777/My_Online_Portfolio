@@ -79,7 +79,7 @@ const smContent = `
 
         <div class="carousel-item">
             <div class="card mx-auto" style="width: 18rem;">
-                <img src="images/proj7.png" class="card-img-top" alt="...">
+                <img src="images/proj8.png" class="card-img-top" alt="...">
                 <div class="card-body">
                 <h6 class="card-title">Employee Directory</h6>
                     <span class="badge rounded-pill bg-primary">HTML</span>
@@ -278,11 +278,6 @@ $(document).ready(function(){
       `
   });
 });
-
-// select the id where you want to inject the html codes
-
-//Prep code - select target, insert designed code and save it as variable through innerHTML
-
 
 window.addEventListener("load", function() {
   if (window.innerWidth >= 320 && window.innerWidth <= 425 ) {
