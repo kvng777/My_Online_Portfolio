@@ -3,8 +3,8 @@ const carouselView = document.getElementById("portfolio");
 const smContent = `
 <div class="container">
 <h5 class="pt-2">Portfolio</h5>
-<div id="carouselTabs" class="carousel slide" data-bs-ride="carousel">
-    <ol class="carousel-indicators text-black">
+<div id="carouselTabs" class="carousel carousel-dark slide" data-bs-ride="carousel">
+    <ol class="carousel-indicators">
     <li data-bs-target="#carouselTabs" data-bs-slide-to="0" class="active"></li>
     <li data-bs-target="#carouselTabs" data-bs-slide-to="1"></li>
     <li data-bs-target="#carouselTabs" data-bs-slide-to="2"></li>
@@ -91,12 +91,12 @@ const smContent = `
         </div>
     </div>
     
-        <a class="carousel-control-prev" href="#carouselTabs" role="button" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon text-black" aria-hidden="true"></span>
+        <a class="carousel-control-prev d-none" href="#carouselTabs" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
         </a>
-        <a class="carousel-control-next" href="#carouselTabs" role="button" data-bs-slide="next">
-            <span class="carousel-control-next-icon text-black" aria-hidden="true"></span>
+        <a class="carousel-control-next d-none" href="#carouselTabs" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
         </a>
   </div>
