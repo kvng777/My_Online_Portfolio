@@ -31,7 +31,6 @@ const smContent = `
                 <div class="card-body">
                     <h6 class="card-title">Style Guide</h6>
                     <span class="badge rounded-pill bg-primary">HTML</span>
-                    <span class="badge rounded-pill bg-success">JS</span>
                     <span class="badge rounded-pill bg-warning">SASS</span>
                     <a class="btn bg-info fs-6 my-3 d-block" href="https://kvng777.github.io/4_style_guide/" target="_blank">Visit Site</a>
                 </div>
@@ -168,6 +167,10 @@ const mdContent= `
                 <img class="" src="images/sass.png" alt="">
                 </li>
 
+                <li class="mx-2">
+                <img class="" src="images/js.png" alt="">
+                </li>
+
             </ul>
             <a class="btn bg-info fs-6 my-3 d-block" href="https://kvng777.github.io/5_photo_gallery/" target="_blank">Visit Site</a>
         </div>
@@ -294,12 +297,3 @@ window.addEventListener("resize", function() {
     carouselView.innerHTML = mdContent;
   }
 });
-
-
-// window.addEventListener("resize", function() {
-//    if(window.innerWidth >= 320 && wdinwo.innerWidth <= 425) {
-//       carouselView.innerHTML = smContent;
-//    } else if (window.innerWidth > 425) {
-//      carouselView.innerHTML = mdContent;
-//    }
-// });
