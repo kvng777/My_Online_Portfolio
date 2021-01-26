@@ -2,7 +2,7 @@ console.log("JS at work!");
 const carouselView = document.getElementById("portfolio");
 const jumbotron = document.querySelector(".jumbotron");
 const smContent = `
-<div class="container">
+<div id="spin" class="container">
 <h4 class="pt-2 text-center">Portfolio</h4>
 <div id="carouselTabs" class="carousel carousel-dark slide" data-bs-ride="carousel">
     <ol class="carousel-indicators">
@@ -284,13 +284,19 @@ $(document).ready(function(){
   });
 });
 
+// window.addEventListener("load", function() {
+//   if (window.innerWidth >= 320 && window.innerWidth <= 425 ) {
+//       carouselView.innerHTML = smContent;
+//   } else if (window.innerWidth > 425) {
+//     carouselView.innerHTML = mdContent;
+//   }
+// });
+
 window.addEventListener("load", function() {
-  if (window.innerWidth >= 320 && window.innerWidth <= 425 ) {
-      carouselView.innerHTML = smContent;
-  } else if (window.innerWidth > 425) {
-    carouselView.innerHTML = mdContent;
-  }
-});
+        if (window.innerWidth > 425) {
+      carouselView.innerHTML = mdContent;
+    }
+  });
 
 window.addEventListener("resize", function() {
   if (window.innerWidth >= 320 && window.innerWidth <= 425 ) {
