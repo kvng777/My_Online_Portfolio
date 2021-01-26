@@ -3,7 +3,7 @@ const carouselView = document.getElementById("portfolio");
 const jumbotron = document.querySelector(".jumbotron");
 const smContent = `
 <div id="spin" class="container">
-<h4 class="pt-2 text-center">Portfolio</h4>
+<h4 class="py-2 text-center">Portfolio</h4>
 <div id="carouselTabs" class="carousel carousel-dark slide" data-bs-ride="carousel">
     <ol class="carousel-indicators">
     <li data-bs-target="#carouselTabs" data-bs-slide-to="0" class="active"></li>
@@ -104,7 +104,7 @@ const smContent = `
 `;
 const mdContent= `
 <div class="container">
-<h4 class="pt-2 text-center">Portfolio</h4>
+<h4 class="py-2 text-center">Portfolio</h4>
 <div class="row">
 
 <div class="col-6 col-lg-4">
@@ -284,24 +284,18 @@ $(document).ready(function(){
   });
 });
 
-// window.addEventListener("load", function() {
-//   if (window.innerWidth >= 320 && window.innerWidth <= 425 ) {
-//       carouselView.innerHTML = smContent;
-//   } else if (window.innerWidth > 425) {
-//     carouselView.innerHTML = mdContent;
-//   }
-// });
-
+//viewport load for medium content styling
 window.addEventListener("load", function() {
         if (window.innerWidth > 425) {
       carouselView.innerHTML = mdContent;
     }
   });
 
+//styling adjustment on resize
 window.addEventListener("resize", function() {
-  if (window.innerWidth >= 320 && window.innerWidth <= 425 ) {
-      carouselView.innerHTML = smContent;
-  } else if (window.innerWidth > 425) {
+if (window.innerWidth > 425) {
     carouselView.innerHTML = mdContent;
+  } else {
+      carouselView.innerHTML =smContent;
   }
 });
