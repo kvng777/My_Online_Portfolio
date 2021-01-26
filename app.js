@@ -6,7 +6,6 @@ const wechat =  `
 <img src="images/wechatid.jpg" class="img-fluid" alt="Kevin's WeChat QR Code">
 </div>
 `;
-const jumbotron = document.querySelector(".jumbotron");
 const smContent = `
 <div id="spin" class="container">
 <h4 class="py-2 text-center">Portfolio</h4>
