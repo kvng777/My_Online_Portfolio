@@ -1,4 +1,6 @@
-console.log("JS at work!");
+
+
+
 const carouselView = document.getElementById("portfolio");
 const wechat =  `
 <div class="text-center">
@@ -274,6 +276,11 @@ const mdContent= `
 `;
 
 //Display wechat qr code
+
+// $(function () {
+//     $('[data-toggle="popover"]').popover();
+//   });
+
 $(document).ready(function(){
   $('[data-toggle="popover"]').popover({
       placement : 'top',
