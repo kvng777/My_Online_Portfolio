@@ -15,33 +15,24 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  box-shadow: 0 5px 17px 10px lightgrey;
   background: #d5d5d5;
   background: linear-gradient(0deg, #d5d5d5 0%, black 85%);
 }
-.jumbotron .container .profile-wrapper {
+.jumbotron .container .profile-wrapper .profile1 {
   position: relative;
 }
-.jumbotron .container .profile-wrapper .profile1,
 .jumbotron .container .profile-wrapper .profile2 {
-  height: 120px;
-  width: 120px;
-}
-.jumbotron .container .profile-wrapper .profile1 {
   position: absolute;
-  transition: opacity 0.3s ease-in-out;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
 }
-.jumbotron .container .profile-wrapper .profile2 {
+.jumbotron .container .profile-wrapper .profile2:hover {
   opacity: 1;
 }
-.jumbotron .container .profile-wrapper .profile1:hover {
-  opacity: 0;
-}
 .jumbotron .container p {
-  font-size: 1.2em;
-}
-.jumbotron .arrow-down {
-  fill: white;
+  font-size: 1em;
 }
 @-webkit-keyframes AnimationName {
   0% {
@@ -69,37 +60,6 @@
 .accordion-body img {
   height: 30px;
   width: 30px;
-}
-
-.career {
-  margin-top: 0.5em;
-  padding: 0;
-  box-shadow: 0px 0px 10px 8px rgba(0, 0, 0, 0.05);
-}
-.career ul h5 {
-  font-size: medium;
-  padding-top: 1em;
-}
-.career ul h6 {
-  font-size: small;
-}
-.career ul li {
-  font-size: smaller;
-  margin: 0.3em 0;
-  margin-right: 1em;
-}
-.career hr {
-  width: 90%;
-  margin: 0 auto;
-}
-.career .education ul {
-  text-align: center;
-  padding: 0 1em;
-}
-.career .education ul img {
-  height: 50px;
-  width: 50px;
-  margin-top: 1em;
 }
 
 .container .card {
@@ -226,110 +186,22 @@ footer ul li .btn {
     opacity: 1;
   }
 }
-.shake-vertical {
-  -webkit-animation: shake-vertical 5s ease-in-out infinite both;
-  animation: shake-vertical 5s ease-in-out infinite both;
-}
-
-/**
- * ----------------------------------------
- * animation shake-vertical
- * ----------------------------------------
- */
-@-webkit-keyframes shake-vertical {
-  0%, 100% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-  }
-  10%, 30%, 50%, 70% {
-    -webkit-transform: translateY(-8px);
-    transform: translateY(-8px);
-  }
-  20%, 40%, 60% {
-    -webkit-transform: translateY(8px);
-    transform: translateY(8px);
-  }
-  80% {
-    -webkit-transform: translateY(6.4px);
-    transform: translateY(6.4px);
-  }
-  90% {
-    -webkit-transform: translateY(-6.4px);
-    transform: translateY(-6.4px);
-  }
-}
-@keyframes shake-vertical {
-  0%, 100% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-  }
-  10%, 30%, 50%, 70% {
-    -webkit-transform: translateY(-8px);
-    transform: translateY(-8px);
-  }
-  20%, 40%, 60% {
-    -webkit-transform: translateY(8px);
-    transform: translateY(8px);
-  }
-  80% {
-    -webkit-transform: translateY(6.4px);
-    transform: translateY(6.4px);
-  }
-  90% {
-    -webkit-transform: translateY(-6.4px);
-    transform: translateY(-6.4px);
-  }
-}
 @media (min-width: 768px) {
-  .jumbotron .container h1 {
-    font-size: 3em;
+  .jumbotron {
+    height: auto;
   }
   .jumbotron .container p {
     font-weight: 200;
     font-size: 1.5em;
-  }
-  .jumbotron .container ul li {
-    margin: 0 0.7em;
-    font-size: x-large;
   }
 
   .accordion-body img {
     height: 50px;
     width: 50px;
   }
-
-  .tab-content .tab-pane .career-sections {
-    display: inline-flex;
-  }
-  .tab-content .tab-pane .career-sections .titles {
-    min-width: 300px;
-  }
-  .tab-content .tab-pane .career-sections .titles h5 {
-    font-size: x-large;
-  }
-  .tab-content .tab-pane .career-sections .titles h6 {
-    font-size: initial;
-  }
-  .tab-content .tab-pane .career-sections .lists {
-    padding-top: 1em;
-    font-size: larger;
-  }
-  .tab-content .tab-pane .education .titles h5 {
-    font-size: x-large;
-  }
-  .tab-content .tab-pane .education .titles h6 {
-    font-size: initial;
-  }
 }
 @media (min-width: 1024px) {
-  .jumbotron .container h1 {
-    font-size: 4em;
-  }
-  .jumbotron .container ul li {
-    font-size: xx-large;
-  }
-  .jumbotron .container .profile-wrapper .profile1,
-.jumbotron .container .profile-wrapper .profile2 {
+  .jumbotron .container img {
     height: 200px;
     width: 200px;
   }

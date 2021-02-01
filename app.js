@@ -1,6 +1,3 @@
-
-
-
 const carouselView = document.getElementById("portfolio");
 const wechat =  `
 <div class="text-center">
@@ -111,25 +108,29 @@ const smContent = `
 `;
 const mdContent= `
 <div class="container">
-<h4 class="py-2 text-center">Portfolio</h4>
+<h1 class="mb-3 mt-5 text-center">Portfolio</h1>
 <div class="row">
 
-<div class="col-6 col-lg-4">
+<div class="col-sm-12 col-md-6 col-lg-4">
     <div class="card project mx-auto">
         <img src="images/proj3.png" alt="Link to project 1">
             <div class="image-overlay">
-                <h5>Tech Stack</h5>
-                <ul class="list-unstyled d-flex flex-row mt-1">
-                    <li class="mx-2">
-                    <img class="" src="images/html.png" alt="">
-                    </li>
+                <div class="desc container">
+                    <h6>Description</h6>   
+                    <p class="fw-light">A mobile <strong>responsive</strong> form by using the <strong>flex box</strong> layout which allows user to insert information with all sorts of <strong>input</strong> type.</p>
 
-                    <li class="mx-2">
-                    <img class="" src="images/css.png" alt="">
-                    </li>
+                    <h6>Tech Stack</h6>
+                        <ul class="list-unstyled d-flex mt-1 justify-content-center">
+                            <li class="mx-2">
+                            <img class="" src="images/html.png" alt="">
+                            </li>
 
-                </ul>
-                <a class="btn bg-info fs-6 my-3 d-block" href="https://kvng777.github.io/3_Online_Registration_Form/" target="_blank">Visit Site</a>
+                            <li class="mx-2">
+                            <img class="" src="images/css.png" alt="">
+                            </li>
+                        </ul>
+                        <a class="btn bg-info fs-6 mx-auto w-75" href="https://kvng777.github.io/3_Online_Registration_Form/" target="_blank">Visit Site</a>
+                </div>
             </div>
         <div class="card-body">
             <h6 class="card-title">Registration Form</h6>
@@ -138,21 +139,26 @@ const mdContent= `
     </div>
 </div>
 
-<div class="col-6 col-lg-4">
+<div class="col-sm-12 col-md-6 col-lg-4">
     <div class="card project mx-auto">
         <img src="images/proj4.png" alt="Link to project 2">
         <div class="image-overlay">
-            <h5>Tech Stack</h5>
-            <ul class="list-unstyled d-flex flex-row mt-1">
-                <li class="mx-2">
-                <img class="" src="images/html.png" alt="">
-                </li>
+            <div class="desc container">
+                <h6>Description</h6>   
+                <p class="fw-light">A mobile <strong>responsive</strong> web-app style with applying <strong>partials</strong> structure in keeping structure organized. With using <strong>Sass syntaxt</strong> keeping stylesheet neat and easy to read </p>
 
-                <li class="mx-2">
-                <img class="" src="images/sass.png" alt="">
-                </li>
-            </ul>
-            <a class="btn bg-info fs-6 my-3 d-block" href="https://kvng777.github.io/4_style_guide/" target="_blank">Visit Site</a>
+                <h6>Tech Stack</h6>
+                    <ul class="list-unstyled d-flex mt-1 justify-content-center">
+                        <li class="mx-2">
+                        <img class="" src="images/html.png" alt="">
+                        </li>
+
+                        <li class="mx-2">
+                        <img class="" src="images/sass.png" alt="">
+                        </li>
+                    </ul>
+                    <a class="btn bg-info fs-6 mx-auto w-75" href="https://kvng777.github.io/4_style_guide/" target="_blank">Visit Site</a>
+            </div>
         </div>
         <div class="card-body">
             <h6 class="card-title">Style Guide</h6>
@@ -161,26 +167,30 @@ const mdContent= `
     </div>
 </div>
 
-<div class="col-6 col-lg-4">
+<div class="col-sm-12 col-md-6 col-lg-4">
     <div class="card project mx-auto">
         <img src="images/proj5.png" alt="Link to project 3">
         <div class="image-overlay">
-            <h5>Tech Stack</h5>
-            <ul class="list-unstyled d-flex flex-row mt-1">
-                <li class="mx-2">
-                <img class="" src="images/html.png" alt="">
-                </li>
+            <div class="desc container">
+                <h6>Description</h6>   
+                <p class="fw-light">An <strong>interactive</strong> photo gallery with using a baggutebox.js <strong>lightbox</strong> feature for viewing large size photos and with a <strong>searchFilter.js</strong> to search for particular image.</p>
 
-                <li class="mx-2">
-                <img class="" src="images/sass.png" alt="">
-                </li>
+                <h6>Tech Stack</h6>
+                    <ul class="list-unstyled d-flex mt-1 justify-content-center">
+                        <li class="mx-2">
+                        <img class="" src="images/html.png" alt="">
+                        </li>
 
-                <li class="mx-2">
-                <img class="" src="images/js.png" alt="">
-                </li>
+                        <li class="mx-2">
+                        <img class="" src="images/sass.png" alt="">
+                        </li>
 
-            </ul>
-            <a class="btn bg-info fs-6 my-3 d-block" href="https://kvng777.github.io/5_photo_gallery/" target="_blank">Visit Site</a>
+                        <li class="mx-2">
+                        <img class="" src="images/js.png" alt="">
+                        </li>
+                    </ul>
+                    <a class="btn bg-info fs-6 mx-auto w-75" href="https://kvng777.github.io/5_photo_gallery/" target="_blank">Visit Site</a>
+            </div>
         </div>
         <div class="card-body">
             <h6 class="card-title">Interactive Photo Gallery</h6>
@@ -189,25 +199,30 @@ const mdContent= `
     </div>
 </div>
 
-<div class="col-6 col-lg-4">
+<div class="col-sm-12 col-md-6 col-lg-4">
     <div class="card project mx-auto">
         <img src="images/proj6.png" alt="Link to project 4">
         <div class="image-overlay">
-            <h5>Tech Stack</h5>
-            <ul class="list-unstyled d-flex flex-row mt-1">
-                <li class="mx-2">
-                <img class="" src="images/html.png" alt="">
-                </li>
+            <div class="desc container">
+                <h6>Description</h6>   
+                <p class="fw-light">A game show web app thats built with <strong>arrays</strong> and <strong>JS</strong> functions to check against selected letters which in the end gives you and win or lose.</p>
 
-                <li class="mx-2">
-                <img class="" src="images/sass.png" alt="">
-                </li>
+                <h6>Tech Stack</h6>
+                    <ul class="list-unstyled d-flex mt-1 justify-content-center">
+                        <li class="mx-2">
+                        <img class="" src="images/html.png" alt="">
+                        </li>
 
-                <li class="mx-2">
-                <img class="" src="images/js.png" alt="">
-                </li>
-            </ul>
-            <a class="btn bg-info fs-6 my-3 d-block" href="https://kvng777.github.io/6-game_show_app_v1.2/" target="_blank">Visit Site</a>
+                        <li class="mx-2">
+                        <img class="" src="images/sass.png" alt="">
+                        </li>
+
+                        <li class="mx-2">
+                        <img class="" src="images/js.png" alt="">
+                        </li>
+                    </ul>
+                    <a class="btn bg-info fs-6 mx-auto w-75" href="https://kvng777.github.io/6-game_show_app_v1.2/" target="_blank">Visit Site</a>
+            </div>
         </div>
 
         <div class="card-body">
@@ -217,26 +232,30 @@ const mdContent= `
     </div>
 </div>
 
-<div class="col-6 col-lg-4">
+<div class="col-sm-12 col-md-6 col-lg-4">
     <div class="card project mx-auto">
         <img src="images/proj7.png" alt="Link to project 5">
         <div class="image-overlay">
-            <h5>Tech Stack</h5>
-            <ul class="list-unstyled d-flex flex-row mt-1">
-                <li class="mx-2">
-                <img class="" src="images/html.png" alt="">
-                </li>
+            <div class="desc container">
+                <h6>Description</h6>   
+                <p class="fw-light">A web responsive web app built with using <strong>CSS grid</strong>. Interactive data charts and graphs are being populated with using <strong>Chart.js</strong> and <strong>Object literals</strong>.</p>
 
-                <li class="mx-2">
-                <img class="" src="images/sass.png" alt="">
-                </li>
+                <h6>Tech Stack</h6>
+                    <ul class="list-unstyled d-flex mt-1 justify-content-center">
+                        <li class="mx-2">
+                        <img class="" src="images/html.png" alt="">
+                        </li>
 
-                <li class="mx-2">
-                <img class="" src="images/js.png" alt="">
-                </li>
+                        <li class="mx-2">
+                        <img class="" src="images/sass.png" alt="">
+                        </li>
 
-            </ul>
-            <a class="btn bg-info fs-6 my-3 d-block" href="https://kvng777.github.io/7-web_app_dashboard_v3.1/" target="_blank">Visit Site</a>
+                        <li class="mx-2">
+                        <img class="" src="images/js.png" alt="">
+                        </li>
+                    </ul>
+                    <a class="btn bg-info fs-6 mx-auto w-75" href="https://kvng777.github.io/7-web_app_dashboard_v3.1/" target="_blank">Visit Site</a>
+            </div>
         </div>
         <div class="card-body">
             <h6 class="card-title">Web App Dashboard</h6>
@@ -245,25 +264,30 @@ const mdContent= `
     </div>
 </div>
 
-<div class="col-6 col-lg-4">
+<div class="col-sm-12 col-md-6 col-lg-4">
     <div class="card project mx-auto">
         <img src="images/proj8.png" alt="Link to project 6">
         <div class="image-overlay">
-            <h5>Tech Stack</h5>
-            <ul class="list-unstyled d-flex flex-row mt-1">
-                <li class="mx-2">
-                <img class="" src="images/html.png" alt="">
-                </li>
+            <div class="desc container">
+                <h6>Description</h6>   
+                <p class="fw-light">A web responsive Employee Directory populating employee data with using <strong>fetch API</strong>. Built with modal pop-up feature to view through employee data.</p>
 
-                <li class="mx-2">
-                <img class="" src="images/sass.png" alt="">
-                </li>
+                <h6>Tech Stack</h6>
+                    <ul class="list-unstyled d-flex mt-1 justify-content-center">
+                        <li class="mx-2">
+                        <img class="" src="images/html.png" alt="">
+                        </li>
 
-                <li class="mx-2">
-                <img class="" src="images/js.png" alt="">
-                </li>
-            </ul>
-            <a class="btn bg-info fs-6 my-3 d-block" href="https://kvng777.github.io/8_employee_directory_v1/" target="_blank">Visit Site</a>
+                        <li class="mx-2">
+                        <img class="" src="images/sass.png" alt="">
+                        </li>
+
+                        <li class="mx-2">
+                        <img class="" src="images/js.png" alt="">
+                        </li>
+                    </ul>
+                    <a class="btn bg-info fs-6 mx-auto w-75" href="https://kvng777.github.io/8_employee_directory_v1/" target="_blank">Visit Site</a>
+            </div>
         </div>
         <div class="card-body">
             <h6 class="card-title">Employee Directory</h6>

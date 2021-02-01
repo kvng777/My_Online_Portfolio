@@ -21,18 +21,34 @@
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    box-shadow: 0 5px 17px 10px lightgrey;
         .container{
-            img{
-                height: 100px;
-                width: 100px;
-            }
-            img:hover{
-                transition: all 1s ease-in-out;
-                content: url('../images/profile2.jpg');
+            .profile-wrapper{
+                position: relative;
+                .profile1,
+                .profile2{
+                    height: 120px;
+                    width: 120px;
+                }
+                .profile1{
+                    position: absolute;
+                    transition: opacity .3s ease-in-out;
+                }
+                .profile2{
+                    opacity: 1;
+                }
+                .profile1:hover{
+                    opacity: 0;
+                }
             }
             p{
-                font-size: 1em;
+                font-size: 1.2em;
             }
+        }
+
+        .arrow-down {
+            fill: white;
+
         }
 
         background: rgb(213,213,213);
@@ -55,6 +71,44 @@
     img{
         height: 30px;
         width: 30px;
+    }
+}
+
+//career & Eductation sections
+.career{
+    margin-top: .5em;
+    ul{
+        h5{
+            font-size: medium;
+            padding-top: 1em;
+        }
+        h6{
+            font-size: small;
+        }
+        li{
+            font-size: smaller;
+            margin: .3em 0;
+            margin-right: 1em;
+        }
+        
+    }
+    hr{
+        width: 90%;
+        margin: 0 auto;
+    }
+    padding:0;
+    box-shadow: 0px 0px 10px 8px rgba(0,0,0,0.05);
+    .education{
+        ul{
+            text-align: center;
+            padding: 0 1em;
+            img{
+                height: 50px;
+                width: 50px;
+                margin-top: 1em;
+            }
+        }
+        
     }
 }
 
@@ -86,11 +140,10 @@
             opacity: 1;
           }
           .row{
-            
            .accordion-collapse{
                border: 0;
            }   
-          }
+        }
     }
 }
 
@@ -205,13 +258,90 @@ footer{
     }
   }
 
+//arrow down animation
+  .shake-vertical {
+	-webkit-animation: shake-vertical 5s ease-in-out infinite both;
+	        animation: shake-vertical 5s ease-in-out infinite both;
+}
+/**
+ * ----------------------------------------
+ * animation shake-vertical
+ * ----------------------------------------
+ */
+ @-webkit-keyframes shake-vertical {
+    0%,
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+    10%,
+    30%,
+    50%,
+    70% {
+      -webkit-transform: translateY(-8px);
+              transform: translateY(-8px);
+    }
+    20%,
+    40%,
+    60% {
+      -webkit-transform: translateY(8px);
+              transform: translateY(8px);
+    }
+    80% {
+      -webkit-transform: translateY(6.4px);
+              transform: translateY(6.4px);
+    }
+    90% {
+      -webkit-transform: translateY(-6.4px);
+              transform: translateY(-6.4px);
+    }
+  }
+  @keyframes shake-vertical {
+    0%,
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+    10%,
+    30%,
+    50%,
+    70% {
+      -webkit-transform: translateY(-8px);
+              transform: translateY(-8px);
+    }
+    20%,
+    40%,
+    60% {
+      -webkit-transform: translateY(8px);
+              transform: translateY(8px);
+    }
+    80% {
+      -webkit-transform: translateY(6.4px);
+              transform: translateY(6.4px);
+    }
+    90% {
+      -webkit-transform: translateY(-6.4px);
+              transform: translateY(-6.4px);
+    }
+  }
+  
+
+
 @media (min-width: 768px){
     .jumbotron{
-        height: auto;
         .container{
+            h1{
+                font-size: 3em;
+            }
             p{
                 font-weight: 200;
                 font-size:1.5em;
+            }
+            ul{
+                li{
+                    margin: 0 .7em;
+                    font-size: x-large;
+                }
             }
         }
     }
@@ -221,16 +351,63 @@ footer{
             width: 50px;
         }
     }
+
+    .tab-content{
+        .tab-pane{            
+            .career-sections{
+                display: inline-flex;
+                .titles{
+                    min-width: 300px;
+                    h5{
+                        font-size: x-large;
+                    }
+                    h6{
+                        font-size: initial;
+                    }
+                }
+                .lists{
+                    padding-top: 1em;
+                    // width: 60%;   
+                    font-size: larger;
+                }
+            }
+            .education{
+                .titles{
+                    h5{
+                        font-size: x-large;
+                    }
+                    h6{
+                        font-size: initial;
+                    }
+            }
+            }
+        }
+    }
+
+
 }
 
 @media (min-width: 1024px){
     .jumbotron{
         .container{
-            img{
-                height: 200px;
-                width: 200px;
+
+            h1{
+                font-size: 4em;
+            }
+            ul{
+                li{
+                    font-size: xx-large;
+                }
+            }
+            .profile-wrapper{
+                .profile1,
+                .profile2{
+                    height: 200px;
+                    width: 200px;
+                }
             }
         }
+        
     }
 
     .project{
