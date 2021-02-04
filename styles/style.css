@@ -1,3 +1,8 @@
+html,
+body {
+  height: 100%;
+}
+
 .navbar {
   background-color: rgba(0, 0, 0, 0.7);
 }
@@ -104,15 +109,11 @@
 
 .canvasing {
   background-color: #dff6ff;
-  height: 100%;
-}
-.canvasing .timeline {
-  height: -webkit-fill-available;
 }
 .canvasing .timeline hr {
   align-items: stretch;
   width: 2px;
-  height: -webkit-fill-available;
+  height: 100%;
   position: absolute;
   left: 31px;
   z-index: 1;
@@ -120,13 +121,6 @@
 
 .resume {
   height: 100%;
-}
-.resume hr {
-  width: 2px;
-  height: -webkit-fill-available;
-  position: absolute;
-  left: 31px;
-  z-index: 1;
 }
 .resume .work-titles {
   align-self: center;
