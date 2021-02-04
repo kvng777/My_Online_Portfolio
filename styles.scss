@@ -1,3 +1,8 @@
+// body{
+//     height: 100%;
+//     min-height: 100%;
+// }
+
 // Navbar section
 .navbar {
      background-color:rgba(0,0,0,.7); 
@@ -112,7 +117,67 @@
     }
 }
 
-// Portflio Sections
+// resume section
+.canvasing{
+    background-color: rgb(223, 246, 255);
+    height: 100%;
+    .timeline{
+        height: -webkit-fill-available;
+        hr{
+            align-items: stretch;
+            width: 2px;
+            height: -webkit-fill-available;
+            position: absolute;
+            left: 31px;
+            z-index: 1;
+        }
+    }
+}
+.resume{
+    height: 100%;
+    hr{
+            width: 2px;
+            height: -webkit-fill-available;
+            position: absolute;
+            left: 31px;
+            z-index: 1;
+    }
+
+    .work-titles{
+        align-self: center;
+    }
+        // margin-left: 3em;
+        .work-heading{
+            display: flex;
+            // justify-content: space-between;
+                .work-icon{
+                    grid-area: icon;
+                    height: 40px;
+                    width: 40px;
+                    background-color: lightgrey;
+                    border-radius:50%;
+                    z-index: 2;
+                    margin-right: 1em;
+                        img{
+                            position: relative;
+                            height:25px;
+                            width:25px;
+                            top: 6px;
+                            left: 8px;
+                        }
+                }
+                .work-titles{
+                    min-width: 240px;
+                }
+        }
+        .work-lists{
+            margin-top: .5em;
+            margin-left: 2.5em;
+        }
+}
+
+
+// portfolio section
 .container{
     .card{
         -webkit-box-shadow: 0px 0px 10px 8px rgba(0,0,0,0.05);
@@ -390,7 +455,6 @@ footer{
 @media (min-width: 1024px){
     .jumbotron{
         .container{
-
             h1{
                 font-size: 4em;
             }
@@ -406,9 +470,19 @@ footer{
                     width: 200px;
                 }
             }
-        }
-        
+        } 
     }
+
+// .container{
+//     .card{
+//         .image-overlay{
+//             img{
+//                 height:30px;
+//                 width:30px;
+//             }
+//         }
+//     }
+// }
 
     .project{
         max-width: 370px;

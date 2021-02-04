@@ -116,7 +116,6 @@ const mdContent= `
         <img src="images/proj3.png" alt="Link to project 1">
             <div class="image-overlay">
                 <div class="desc container">
-                    <h6>Description</h6>   
                     <p class="fw-light">A mobile <strong>responsive</strong> form by using the <strong>flex box</strong> layout which allows user to insert information with all sorts of <strong>input</strong> type.</p>
 
                     <h6>Tech Stack</h6>
@@ -133,7 +132,7 @@ const mdContent= `
                 </div>
             </div>
         <div class="card-body">
-            <h6 class="card-title">Registration Form</h6>
+            <h6 class="card-title my-auto">Registration Form</h6>
             <p class="card-text"></p>
         </div>
     </div>
@@ -144,8 +143,7 @@ const mdContent= `
         <img src="images/proj4.png" alt="Link to project 2">
         <div class="image-overlay">
             <div class="desc container">
-                <h6>Description</h6>   
-                <p class="fw-light">A mobile <strong>responsive</strong> web-app style with applying <strong>partials</strong> structure in keeping structure organized. With using <strong>Sass syntaxt</strong> keeping stylesheet neat and easy to read </p>
+                <p class="fw-light">A mobile <strong>responsive</strong> web-app style using partials in keeping codes organized. Used <strong>Sass syntaxt</strong> keeping stylesheet neat and easy to read.</p>
 
                 <h6>Tech Stack</h6>
                     <ul class="list-unstyled d-flex mt-1 justify-content-center">
@@ -161,7 +159,7 @@ const mdContent= `
             </div>
         </div>
         <div class="card-body">
-            <h6 class="card-title">Style Guide</h6>
+            <h6 class="card-title my-auto">Style Guide</h6>
             <p class="card-text"></p>
         </div>
     </div>
@@ -171,8 +169,7 @@ const mdContent= `
     <div class="card project mx-auto">
         <img src="images/proj5.png" alt="Link to project 3">
         <div class="image-overlay">
-            <div class="desc container">
-                <h6>Description</h6>   
+            <div class="desc container"> 
                 <p class="fw-light">An <strong>interactive</strong> photo gallery with using a baggutebox.js <strong>lightbox</strong> feature for viewing large size photos and with a <strong>searchFilter.js</strong> to search for particular image.</p>
 
                 <h6>Tech Stack</h6>
@@ -193,7 +190,7 @@ const mdContent= `
             </div>
         </div>
         <div class="card-body">
-            <h6 class="card-title">Interactive Photo Gallery</h6>
+            <h6 class="card-title my-auto">Interactive Photo Gallery</h6>
             <p class="card-text"></p>
         </div>
     </div>
@@ -204,7 +201,6 @@ const mdContent= `
         <img src="images/proj6.png" alt="Link to project 4">
         <div class="image-overlay">
             <div class="desc container">
-                <h6>Description</h6>   
                 <p class="fw-light">A game show web app thats built with <strong>arrays</strong> and <strong>JS</strong> functions to check against selected letters which in the end gives you and win or lose.</p>
 
                 <h6>Tech Stack</h6>
@@ -226,7 +222,7 @@ const mdContent= `
         </div>
 
         <div class="card-body">
-            <h6 class="card-title">Game Show App</h6>
+            <h6 class="card-title my-auto">Game Show App</h6>
             <p class="card-text"></p>
         </div>
     </div>
@@ -236,8 +232,7 @@ const mdContent= `
     <div class="card project mx-auto">
         <img src="images/proj7.png" alt="Link to project 5">
         <div class="image-overlay">
-            <div class="desc container">
-                <h6>Description</h6>   
+            <div class="desc container"> 
                 <p class="fw-light">A web responsive web app built with using <strong>CSS grid</strong>. Interactive data charts and graphs are being populated with using <strong>Chart.js</strong> and <strong>Object literals</strong>.</p>
 
                 <h6>Tech Stack</h6>
@@ -258,7 +253,7 @@ const mdContent= `
             </div>
         </div>
         <div class="card-body">
-            <h6 class="card-title">Web App Dashboard</h6>
+            <h6 class="card-title my-auto">Web App Dashboard</h6>
             <p class="card-text"></p>
         </div>
     </div>
@@ -269,7 +264,6 @@ const mdContent= `
         <img src="images/proj8.png" alt="Link to project 6">
         <div class="image-overlay">
             <div class="desc container">
-                <h6>Description</h6>   
                 <p class="fw-light">A web responsive Employee Directory populating employee data with using <strong>fetch API</strong>. Built with modal pop-up feature to view through employee data.</p>
 
                 <h6>Tech Stack</h6>
@@ -290,7 +284,7 @@ const mdContent= `
             </div>
         </div>
         <div class="card-body">
-            <h6 class="card-title">Employee Directory</h6>
+            <h6 class="card-title my-auto">Employee Directory</h6>
             <p class="card-text"></p>
         </div>
     </div>
