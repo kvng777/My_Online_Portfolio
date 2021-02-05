@@ -76,6 +76,16 @@ body {
   width: 30px;
 }
 
+.card .card-body .goal-icons {
+  text-align: center;
+}
+.card .card-body .goal-icons img {
+  height: 40px;
+  width: 40px;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
 .career {
   margin-top: 0.5em;
   padding: 0;
@@ -108,7 +118,7 @@ body {
 }
 
 .canvasing {
-  background-color: #dff6ff;
+  position: relative;
 }
 .canvasing .timeline hr {
   align-items: stretch;
@@ -117,21 +127,15 @@ body {
   position: absolute;
   left: 31px;
   z-index: 1;
+  margin-top: 0;
 }
 
-.resume {
-  height: 100%;
-}
-.resume .work-titles {
-  align-self: center;
-}
 .resume .work-heading {
   display: flex;
 }
 .resume .work-heading .work-icon {
-  grid-area: icon;
   height: 40px;
-  width: 40px;
+  min-width: 40px;
   background-color: lightgrey;
   border-radius: 50%;
   z-index: 2;
@@ -145,11 +149,58 @@ body {
   left: 8px;
 }
 .resume .work-heading .work-titles {
-  min-width: 240px;
+  border-bottom: 5px solid #b4c1c8;
+}
+.resume .work-heading .work-titles h5 {
+  font-weight: 300;
+}
+.resume .work-heading .work-titles h6 {
+  font-size: 12px;
+  color: grey;
+}
+.resume .work-heading .work-titles img {
+  height: 40px;
+  width: 40px;
 }
 .resume .work-lists {
   margin-top: 0.5em;
   margin-left: 2.5em;
+  font-weight: 300;
+}
+
+.education .education-heading {
+  display: flex;
+}
+.education .education-heading .education-icon {
+  height: 40px;
+  min-width: 40px;
+  background-color: lightgrey;
+  border-radius: 50%;
+  z-index: 2;
+}
+.education .education-heading .education-icon img {
+  position: relative;
+  height: 25px;
+  width: 25px;
+  top: 6px;
+  left: 8px;
+}
+.education .education-heading .education-titles {
+  margin: 0 auto;
+  min-width: 240px;
+  margin-bottom: 2em;
+  text-align: center;
+}
+.education .education-heading .education-titles img {
+  height: 40px;
+  width: 40px;
+}
+.education .education-heading .education-titles h5 {
+  font-weight: 300;
+}
+.education .education-heading .education-titles h6 {
+  font-size: 12px;
+  color: grey;
 }
 
 .container .card {
@@ -369,6 +420,39 @@ footer ul li .btn {
   }
   .tab-content .tab-pane .education .titles h6 {
     font-size: initial;
+  }
+
+  .resume .work-heading .work-icon {
+    margin-right: 1em;
+  }
+  .resume .work-heading .work-icon img {
+    position: relative;
+    height: 25px;
+    width: 25px;
+    top: 6px;
+    left: 8px;
+  }
+  .canvasing {
+    position: relative;
+  }
+  .canvasing .timeline hr.education-line {
+    align-items: stretch;
+    width: 2px;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    margin-top: 0;
+  }
+
+  .education .education-heading .education-icon {
+    margin-right: 1em;
+  }
+  .education .education-heading .education-titles {
+    width: -webkit-fill-available;
+    text-align: left;
+  }
+  .education .education-heading .education-titles img {
+    float: right;
   }
 }
 @media (min-width: 1024px) {
