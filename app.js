@@ -293,12 +293,7 @@ const mdContent= `
 </div>
 `;
 
-//Display wechat qr code
-
-// $(function () {
-//     $('[data-toggle="popover"]').popover();
-//   });
-
+//wechat qrcode pop-over
 $(document).ready(function(){
   $('[data-toggle="popover"]').popover({
       placement : 'top',
@@ -323,3 +318,19 @@ if (window.innerWidth > 425) {
       carouselView.innerHTML =smContent;
   }
 });
+
+
+// navbar auto close on click anywhere
+// const navbar = document.querySelector("#navbarNavAltMarkup a");
+// let navcollapse = document.querySelector('#navbarNavAltMarkup');
+// navbar.addEventListener('click', (e)=>{
+    
+//     if(navcollapse.className == "show"){   
+//     navcollapse.removeClass = 'show';
+// }
+
+// });
+$( '#navbarNavAltMarkup a' ).on('click', function(){
+    $('#navbarNavAltMarkup').collapse('hide');
+});
+
