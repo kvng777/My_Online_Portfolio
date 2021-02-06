@@ -113,7 +113,7 @@ const mdContent= `
 
 <div class="col-sm-12 col-md-6 col-lg-4">
     <div class="card project mx-auto">
-        <img src="images/proj3.gif" alt="Link to project 1">
+        <img src="/images/proj3.gif" alt="Link to project 1">
             <div class="image-overlay">
                 <div class="desc container">
                     <p class="fw-light">A mobile <strong>responsive</strong> form by using the <strong>flex box</strong> layout which allows user to insert information with all sorts of <strong>input</strong> type.</p>
