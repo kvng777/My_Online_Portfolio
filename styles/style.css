@@ -11,6 +11,13 @@ body {
   width: 50px;
 }
 
+a.anchor {
+  display: block;
+  position: relative;
+  top: -100px;
+  visibility: hidden;
+}
+
 .jumbotron {
   height: 100vh;
   padding-top: 6rem;
@@ -234,7 +241,7 @@ body {
 }
 
 .card {
-  margin-bottom: 1rem;
+  margin-bottom: 1.5em;
 }
 
 .nav-item img {
@@ -468,11 +475,20 @@ footer ul li .btn {
     width: 200px;
   }
 
+  .canvasing {
+    max-width: 900px;
+  }
+
   .project {
     max-width: 370px;
   }
   .project img {
     max-height: 250px;
+  }
+
+  .myportfolio {
+    max-width: 1024px;
+    margin: 0 auto;
   }
 }
 

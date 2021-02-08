@@ -16,6 +16,16 @@ body{
     }
 }
 
+//nav offsets
+a.anchor {
+    display: block;
+    position: relative;
+    top: -100px;
+    visibility: hidden;
+}
+    
+
+
 //jumbotron section
 .jumbotron {
     height:100vh;
@@ -264,7 +274,7 @@ body{
 }
 
 .card {
-    margin-bottom: 1rem;
+    margin-bottom: 1.5em;
 }
 
 // footer section
@@ -574,6 +584,10 @@ footer{
         } 
     }
 
+    .canvasing{
+        max-width: 900px;
+    }
+
     .project{
         max-width: 370px;
         img{
@@ -581,4 +595,8 @@ footer{
         }
     }
 
+    .myportfolio{
+        max-width: 1024px;
+        margin: 0 auto;
+    }
 }

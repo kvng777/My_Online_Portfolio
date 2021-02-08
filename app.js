@@ -5,107 +5,110 @@ const wechat =  `
 <img src="images/wechatid.jpg" class="img-fluid" alt="Kevin's WeChat QR Code">
 </div>
 `;
-const smContent = `
-<div id="spin" class="container">
-<h4 class="py-2 text-center">Portfolio</h4>
-<div id="carouselTabs" class="carousel carousel-dark slide" data-bs-ride="carousel">
-    <ol class="carousel-indicators">
-    <li data-bs-target="#carouselTabs" data-bs-slide-to="0" class="active"></li>
-    <li data-bs-target="#carouselTabs" data-bs-slide-to="1"></li>
-    <li data-bs-target="#carouselTabs" data-bs-slide-to="2"></li>
-    <li data-bs-target="#carouselTabs" data-bs-slide-to="3"></li>
-    <li data-bs-target="#carouselTabs" data-bs-slide-to="4"></li>
-    <li data-bs-target="#carouselTabs" data-bs-slide-to="5"></li>
-    </ol>
-    <div class="carousel-inner">
-        <div class="carousel-item active">
-            <div class="card mx-auto" style="width: 18rem;">
-                <img src="images/proj3.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                <h6 class="card-title">Registration Form</h6>
-                    <span class="badge rounded-pill bg-primary">HTML</span>
-                    <span class="badge rounded-pill bg-secondary">CSS</span>
-                    <a class="btn bg-info fs-6 my-3 d-block" href="https://kvng777.github.io/3_Online_Registration_Form/" target="_blank">Visit Site</a>
-                </div>
-            </div>
-        </div>
 
-        <div class="carousel-item">
-            <div class="card mx-auto" style="width: 18rem;">
-                <img src="images/proj4.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h6 class="card-title">Style Guide</h6>
-                    <span class="badge rounded-pill bg-primary">HTML</span>
-                    <span class="badge rounded-pill bg-warning">SASS</span>
-                    <a class="btn bg-info fs-6 my-3 d-block" href="https://kvng777.github.io/4_style_guide/" target="_blank">Visit Site</a>
-                </div>
-            </div>
-        </div>
+// const smContent = `
+// <div id="portfolio" class="myportfolio myportfolio-sm">
+//               <div class="container">
+//                 <h1 class="mt-4 mb-3 text-center">Portfolio</h1>
+//                 <div id="carouselTabs" class="carousel carousel-dark slide" data-bs-ride="carousel">
+//                     <ol class="carousel-indicators">
+//                       <li data-bs-target="#carouselTabs" data-bs-slide-to="0" class="active"></li>
+//                       <li data-bs-target="#carouselTabs" data-bs-slide-to="1"></li>
+//                       <li data-bs-target="#carouselTabs" data-bs-slide-to="2"></li>
+//                       <li data-bs-target="#carouselTabs" data-bs-slide-to="3"></li>
+//                       <li data-bs-target="#carouselTabs" data-bs-slide-to="4"></li>
+//                       <li data-bs-target="#carouselTabs" data-bs-slide-to="5"></li>
+//                     </ol>
+//                     <div class="carousel-inner">
+//                         <div class="carousel-item active">
+//                             <div class="card mx-auto" style="width: 18rem;">
+//                                 <img src="images/proj3.png" class="card-img-top" alt="...">
+//                                 <div class="card-body">
+//                                 <h6 class="card-title">Registration Form</h6>
+//                                     <span class="badge rounded-pill bg-primary">HTML</span>
+//                                     <span class="badge rounded-pill bg-secondary">CSS</span>
+//                                     <a class="btn bg-info fs-6 my-3 d-block" href="https://kvng777.github.io/3_Online_Registration_Form/" target="_blank">Visit Site</a>
+//                                 </div>
+//                             </div>
+//                         </div>
+                
+//                         <div class="carousel-item">
+//                             <div class="card mx-auto" style="width: 18rem;">
+//                                 <img src="images/proj4.png" class="card-img-top" alt="...">
+//                                 <div class="card-body">
+//                                     <h6 class="card-title">Style Guide</h6>
+//                                     <span class="badge rounded-pill bg-primary">HTML</span>
+//                                     <span class="badge rounded-pill bg-warning">SASS</span>
+//                                     <a class="btn bg-info fs-6 my-3 d-block" href="https://kvng777.github.io/4_style_guide/" target="_blank">Visit Site</a>
+//                                 </div>
+//                             </div>
+//                         </div>
+                
+//                         <div class="carousel-item">
+//                             <div class="card mx-auto" style="width: 18rem;">
+//                                 <img src="images/proj5.png" class="card-img-top" alt="...">
+//                                 <div class="card-body">
+//                                     <h6 class="card-title">Interactive Photo Gallery</h6>
+//                                     <span class="badge rounded-pill bg-primary">HTML</span>
+//                                     <span class="badge rounded-pill bg-success">JS</span>
+//                                     <span class="badge rounded-pill bg-warning">SASS</span>
+//                                     <a class="btn bg-info fs-6 my-3 d-block" href="https://kvng777.github.io/5_photo_gallery/" target="_blank">Visit Site</a>
+//                                 </div>
+//                             </div>
+//                         </div>
+                
+//                         <div class="carousel-item">
+//                             <div class="card mx-auto" style="width: 18rem;">
+//                                 <img src="images/proj6.png" class="card-img-top" alt="...">
+//                                 <div class="card-body">
+//                                 <h6 class="card-title">Game Show App</h6>
+//                                     <span class="badge rounded-pill bg-primary">HTML</span>
+//                                     <span class="badge rounded-pill bg-success">JS</span>
+//                                     <span class="badge rounded-pill bg-warning">SASS</span>
+//                                     <a class="btn bg-info fs-6 my-3 d-block" href="https://kvng777.github.io/6-game_show_app_v1.2/" target="_blank">Visit Site</a>
+//                                 </div>
+//                             </div>
+//                         </div>
+                
+//                         <div class="carousel-item">
+//                             <div class="card mx-auto" style="width: 18rem;">
+//                                 <img src="images/proj7.png" class="card-img-top" alt="...">
+//                                 <div class="card-body">
+//                                 <h6 class="card-title">Web App Dashboard</h6>
+//                                     <span class="badge rounded-pill bg-primary">HTML</span>
+//                                     <span class="badge rounded-pill bg-success">JS</span>
+//                                     <span class="badge rounded-pill bg-warning">SASS</span>
+//                                     <a class="btn bg-info fs-6 my-3 d-block" href="https://kvng777.github.io/7-web_app_dashboard_v3.1/" target="_blank">Visit Site</a>
+//                                 </div>
+//                             </div>
+//                         </div>
+                
+//                         <div class="carousel-item">
+//                             <div class="card mx-auto" style="width: 18rem;">
+//                                 <img src="images/proj8.png" class="card-img-top" alt="...">
+//                                 <div class="card-body">
+//                                 <h6 class="card-title">Employee Directory</h6>
+//                                     <span class="badge rounded-pill bg-primary">HTML</span>
+//                                     <span class="badge rounded-pill bg-success">JS</span>
+//                                     <span class="badge rounded-pill bg-warning">SASS</span>
+//                                     <a class="btn bg-info fs-6 my-3 d-block" href="https://kvng777.github.io/8_employee_directory_v1/" target="_blank">Visit Site</a>
+//                                 </div>
+//                             </div>
+//                         </div>
+//                     </div>
+                    
+//                         <a class="carousel-control-prev" href="#carouselTabs" role="button" data-bs-slide="prev">
+//                           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+//                           <span class="visually-hidden">Previous</span>
+//                         </a>
+//                         <a class="carousel-control-next" href="#carouselTabs" role="button" data-bs-slide="next">
+//                           <span class="carousel-control-next-icon" aria-hidden="true"></span>
+//                           <span class="visually-hidden">Next</span>
+//                         </a>
+//                   </div>
+//                 </div>
+// `;
 
-        <div class="carousel-item">
-            <div class="card mx-auto" style="width: 18rem;">
-                <img src="images/proj5.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h6 class="card-title">Interactive Photo Gallery</h6>
-                    <span class="badge rounded-pill bg-primary">HTML</span>
-                    <span class="badge rounded-pill bg-success">JS</span>
-                    <span class="badge rounded-pill bg-warning">SASS</span>
-                    <a class="btn bg-info fs-6 my-3 d-block" href="https://kvng777.github.io/5_photo_gallery/" target="_blank">Visit Site</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="carousel-item">
-            <div class="card mx-auto" style="width: 18rem;">
-                <img src="images/proj6.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                <h6 class="card-title">Game Show App</h6>
-                    <span class="badge rounded-pill bg-primary">HTML</span>
-                    <span class="badge rounded-pill bg-success">JS</span>
-                    <span class="badge rounded-pill bg-warning">SASS</span>
-                    <a class="btn bg-info fs-6 my-3 d-block" href="https://kvng777.github.io/6-game_show_app_v1.2/" target="_blank">Visit Site</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="carousel-item">
-            <div class="card mx-auto" style="width: 18rem;">
-                <img src="images/proj7.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                <h6 class="card-title">Web App Dashboard</h6>
-                    <span class="badge rounded-pill bg-primary">HTML</span>
-                    <span class="badge rounded-pill bg-success">JS</span>
-                    <span class="badge rounded-pill bg-warning">SASS</span>
-                    <a class="btn bg-info fs-6 my-3 d-block" href="https://kvng777.github.io/7-web_app_dashboard_v3.1/" target="_blank">Visit Site</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="carousel-item">
-            <div class="card mx-auto" style="width: 18rem;">
-                <img src="images/proj8.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                <h6 class="card-title">Employee Directory</h6>
-                    <span class="badge rounded-pill bg-primary">HTML</span>
-                    <span class="badge rounded-pill bg-success">JS</span>
-                    <span class="badge rounded-pill bg-warning">SASS</span>
-                    <a class="btn bg-info fs-6 my-3 d-block" href="https://kvng777.github.io/8_employee_directory_v1/" target="_blank">Visit Site</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-        <a class="carousel-control-prev d-none" href="#carouselTabs" role="button" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </a>
-        <a class="carousel-control-next d-none" href="#carouselTabs" role="button" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </a>
-  </div>
-</div>
-`;
 const mdContent= `
 <div class="container">
 <h1 class="mb-3 mt-5 text-center">Portfolio</h1>
@@ -303,33 +306,25 @@ $(document).ready(function(){
   });
 });
 
+
 //viewport load for medium content styling
-window.addEventListener("load", function() {
-        if (window.innerWidth > 425) {
-      carouselView.innerHTML = mdContent;
-    }
-  });
+// window.addEventListener("load", function() {
+//         if (window.innerWidth > 425) {
+//       carouselView.innerHTML = mdContent;
+//     }
+//   });
 
-//styling adjustment on resize
-window.addEventListener("resize", function() {
-if (window.innerWidth > 425) {
-    carouselView.innerHTML = mdContent;
-  } else {
-      carouselView.innerHTML =smContent;
-  }
-});
-
-
-// navbar auto close on click anywhere
-// const navbar = document.querySelector("#navbarNavAltMarkup a");
-// let navcollapse = document.querySelector('#navbarNavAltMarkup');
-// navbar.addEventListener('click', (e)=>{
-    
-//     if(navcollapse.className == "show"){   
-//     navcollapse.removeClass = 'show';
-// }
-
+// //styling adjustment on resize
+// window.addEventListener("resize", function() {
+// if (window.innerWidth > 425) {
+//     carouselView.innerHTML = mdContent;
+//   } else {
+//       carouselView.innerHTML =smContent;
+//   }
 // });
+
+
+// navbar auto close on click item
 $( '#navbarNavAltMarkup a' ).on('click', function(){
     $('#navbarNavAltMarkup').collapse('hide');
 });
