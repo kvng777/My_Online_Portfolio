@@ -1,317 +1,328 @@
 html,
-body{
-    height: 100%;
+body {
+  height: 100%;
 }
 
 // Navbar section
 .navbar {
-     background-color:rgba(0,0,0,.7); 
-     .container{
-        .navbar-brand{
-            img{
-                height: 50px;
-                width: 50px;
-            }
-        }
+  background-color: rgba(0, 0, 0, 0.7);
+  .container {
+    .navbar-brand {
+      img {
+        height: 50px;
+        width: 50px;
+      }
     }
+  }
 }
 
 //nav offsets
 a.anchor {
-    display: block;
-    position: relative;
-    top: -100px;
-    visibility: hidden;
+  display: block;
+  position: relative;
+  top: -100px;
+  visibility: hidden;
 }
-    
-
 
 //jumbotron section
 .jumbotron {
-    height:100vh;
-    padding-top: 6rem;
-    padding-bottom: 1rem;
-    transition: all 1s ease-in;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    box-shadow: 0 5px 17px 10px lightgrey;
-        .container{
-            .profile-wrapper{
-                position: relative;
-                .profile1,
-                .profile2{
-                    height: 120px;
-                    width: 120px;
-                }
-                .profile1{
-                    position: absolute;
-                    transition: opacity .3s ease-in-out;
-                }
-                .profile2{
-                    opacity: 1;
-                }
-                .profile1:hover{
-                    opacity: 0;
-                }
-            }
-            p{
-                font-size: 1.2em;
-            }
-        }
-
-        .arrow-down {
-            fill: white;
-
-        }
-
-        background: rgb(213,213,213);
-        background: linear-gradient(0deg, rgba(213,213,213,1) 0%, rgba(0,0,0,1) 85%);
-    
-    @-webkit-keyframes AnimationName {
-        0%{background-position:0% 14%}
-        50%{background-position:100% 87%}
-        100%{background-position:0% 14%}
+  height: 100vh;
+  padding-top: 6rem;
+  padding-bottom: 1rem;
+  transition: all 1s ease-in;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  box-shadow: 0 5px 17px 10px lightgrey;
+  .container {
+    .profile-wrapper {
+      position: relative;
+      .profile1,
+      .profile2 {
+        height: 120px;
+        width: 120px;
+      }
+      .profile1 {
+        position: absolute;
+        transition: opacity 0.3s ease-in-out;
+      }
+      .profile2 {
+        opacity: 1;
+      }
+      .profile1:hover {
+        opacity: 0;
+      }
     }
-    @keyframes AnimationName {
-        0%{background-position:0% 14%}
-        50%{background-position:100% 87%}
-        100%{background-position:0% 14%}
+    p {
+      font-size: 1.2em;
     }
+  }
+
+  .arrow-down {
+    fill: white;
+  }
+
+  background: rgb(213, 213, 213);
+  background: linear-gradient(
+    0deg,
+    rgba(213, 213, 213, 1) 0%,
+    rgba(0, 0, 0, 1) 85%
+  );
+
+  @-webkit-keyframes AnimationName {
+    0% {
+      background-position: 0% 14%;
+    }
+    50% {
+      background-position: 100% 87%;
+    }
+    100% {
+      background-position: 0% 14%;
+    }
+  }
+  @keyframes AnimationName {
+    0% {
+      background-position: 0% 14%;
+    }
+    50% {
+      background-position: 100% 87%;
+    }
+    100% {
+      background-position: 0% 14%;
+    }
+  }
 }
 
 // about section
-.accordion-body{
-    img{
-        height: 30px;
-        width: 30px;
-    }
+.accordion-body {
+  img {
+    height: 30px;
+    width: 30px;
+  }
 }
-.card{
-    .card-body{
-        .goal-icons{
-            text-align: center;
-            img{
-            height: 40px;
-            width: 40px;
-            margin-left: 1em;
-            margin-right: 1em;
-            }
-        }
+.card {
+  .card-body {
+    .goal-icons {
+      text-align: center;
+      img {
+        height: 40px;
+        width: 40px;
+        margin-left: 1em;
+        margin-right: 1em;
+      }
     }
+  }
 }
 
 //career & Eductation sections
-.career{
-    margin-top: .5em;
-    ul{
-        h5{
-            font-size: medium;
-            padding-top: 1em;
-        }
-        h6{
-            font-size: small;
-        }
-        li{
-            font-size: smaller;
-            margin: .3em 0;
-            margin-right: 1em;
-        }
-        
+.career {
+  margin-top: 0.5em;
+  ul {
+    h5 {
+      font-size: medium;
+      padding-top: 1em;
     }
-    hr{
-        width: 90%;
-        margin: 0 auto;
+    h6 {
+      font-size: small;
     }
-    padding:0;
-    box-shadow: 0px 0px 10px 8px rgba(0,0,0,0.05);
-    .education{
-        ul{
-            text-align: center;
-            padding: 0 1em;
-            img{
-                height: 50px;
-                width: 50px;
-                margin-top: 1em;
-            }
-        }
-        
+    li {
+      font-size: smaller;
+      margin: 0.3em 0;
+      margin-right: 1em;
     }
+  }
+  hr {
+    width: 90%;
+    margin: 0 auto;
+  }
+  padding: 0;
+  box-shadow: 0px 0px 10px 8px rgba(0, 0, 0, 0.05);
+  .education {
+    ul {
+      text-align: center;
+      padding: 0 1em;
+      img {
+        height: 50px;
+        width: 50px;
+        margin-top: 1em;
+      }
+    }
+  }
 }
 
 // resume section
-.canvasing{
-    position: relative;
-    .timeline{
-        hr{
-            align-items: stretch;
-            width: 2px;
-            height: 100%;
-            position: absolute;
-            left: 31px;
-            z-index: 1;
-            margin-top: 0;
-        }
+.canvasing {
+  position: relative;
+  .timeline {
+    hr {
+      align-items: stretch;
+      width: 2px;
+      height: 100%;
+      position: absolute;
+      left: 31px;
+      z-index: 1;
+      margin-top: 0;
     }
+  }
 }
 
 // work history section
-.resume{
-        .work-heading{
-            display: flex;
-                .work-icon{
-                    height: 40px;
-                    min-width: 40px;
-                    background-color: lightgrey;
-                    border-radius:50%;
-                    z-index: 2;
-                    margin-right: 1em;
-                        img{
-                            position: relative;
-                            height:25px;
-                            width:25px;
-                            top: 6px;
-                            left: 8px;
-                        }
-                }
-                .work-titles{
-                    // min-width: 240px;
-                    border-bottom: 5px solid rgb(180, 193, 200);
-                    h5{
-                        font-weight: 300;
-                    }
-                    h6{
-                        font-size: 12px;
-                        color: grey;
-                    }
-                    img{
-                        height: 40px;
-                        width: 40px;
-                    }
-                }
-        }
-        .work-lists{
-            margin-top: .5em;
-            margin-left: 2.5em;
-            font-weight: 300;
-        }
+.resume {
+  .work-heading {
+    display: flex;
+    .work-icon {
+      height: 40px;
+      min-width: 40px;
+      background-color: lightgrey;
+      border-radius: 50%;
+      z-index: 2;
+      margin-right: 1em;
+      img {
+        position: relative;
+        height: 25px;
+        width: 25px;
+        top: 6px;
+        left: 8px;
+      }
+    }
+    .work-titles {
+      // min-width: 240px;
+      border-bottom: 5px solid rgb(180, 193, 200);
+      h5 {
+        font-weight: 300;
+      }
+      h6 {
+        font-size: 12px;
+        color: grey;
+      }
+      img {
+        height: 40px;
+        width: 40px;
+      }
+    }
+  }
+  .work-lists {
+    margin-top: 0.5em;
+    margin-left: 2.5em;
+    font-weight: 300;
+  }
 }
 
-
 //education section
-.education{
-        .education-heading{
-            display: flex;
-                .education-icon{
-                    height: 40px;
-                    min-width: 40px;
-                    background-color: lightgrey;
-                    border-radius:50%;
-                    z-index: 2;
-                        img{
-                            position: relative;
-                            height:25px;
-                            width:25px;
-                            top: 6px;
-                            left: 8px;
-                        }
-                }
-                .education-titles{
-                    margin: 0 auto;
-                    min-width: 240px;
-                    margin-bottom: 2em;
-                    text-align: center;
-                    img{
-                        height: 40px;
-                        width: 40px;
-                    }
-                    h5{
-                        font-weight: 300;
-                    }
-                    h6{
-                        font-size: 12px;
-                        color: grey;
-                    }
-                }
-                
-        }
+.education {
+  .education-heading {
+    display: flex;
+    .education-icon {
+      height: 40px;
+      min-width: 40px;
+      background-color: lightgrey;
+      border-radius: 50%;
+      z-index: 2;
+      img {
+        position: relative;
+        height: 25px;
+        width: 25px;
+        top: 6px;
+        left: 8px;
+      }
+    }
+    .education-titles {
+      margin: 0 auto;
+      min-width: 240px;
+      margin-bottom: 2em;
+      text-align: center;
+      img {
+        height: 40px;
+        width: 40px;
+      }
+      h5 {
+        font-weight: 300;
+      }
+      h6 {
+        font-size: 12px;
+        color: grey;
+      }
+    }
+  }
 }
 
 // portfolio section
-.container{
-    .card{
-        -webkit-box-shadow: 0px 0px 10px 8px rgba(0,0,0,0.05);
-        -moz-box-shadow: 0px 0px 10px 8px rgba(0,0,0,0.05);
-        box-shadow: 0px 0px 10px 8px rgba(0,0,0,0.05);
-        .image-overlay {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.7);
-            opacity: 0;
-            transition: opacity 0.35s;
-            color: white;
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            img{
-                height: 50px;
-                width: 50px;
-            }
-        }
-        .image-overlay:hover {
-            opacity: 1;
-          }
-          .row{
-           .accordion-collapse{
-               border: 0;
-           }   
-        }
+.container {
+  .card {
+    -webkit-box-shadow: 0px 0px 10px 8px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: 0px 0px 10px 8px rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 0px 10px 8px rgba(0, 0, 0, 0.05);
+    .image-overlay {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.7);
+      opacity: 0;
+      transition: opacity 0.35s;
+      color: white;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      img {
+        height: 50px;
+        width: 50px;
+      }
     }
+    .image-overlay:hover {
+      opacity: 1;
+    }
+    .row {
+      .accordion-collapse {
+        border: 0;
+      }
+    }
+  }
 }
 
 .card {
-    margin-bottom: 1.5em;
+  margin-bottom: 1.5em;
 }
 
 // footer section
-.nav-item img{
-    height: 30px;
-    width: 30px;
+.nav-item img {
+  height: 30px;
+  width: 30px;
 }
 
-footer{
-    ul{
-        li{
-            .btn{
-                box-shadow: none;
-            }
-        }
+footer {
+  ul {
+    li {
+      .btn {
+        box-shadow: none;
+      }
     }
+  }
 }
 
-.popover{
-    height: auto;
-    width: 150px;
+.popover {
+  height: auto;
+  width: 150px;
 }
 
-.modal{
-    .modal-dialog{
-        .modal-content{
-            p{
-                font-size: 10px;
-            }
-        }
+.modal {
+  .modal-dialog {
+    .modal-content {
+      p {
+        font-size: 10px;
+      }
     }
+  }
 }
 
 //roll in name
 .roll-in-blurred-left {
-    -webkit-animation: roll-in-blurred-left 0.8s 0.1s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
-	        animation: roll-in-blurred-left 0.8s 0.1s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+  -webkit-animation: roll-in-blurred-left 0.8s 0.1s
+    cubic-bezier(0.47, 0, 0.745, 0.715) both;
+  animation: roll-in-blurred-left 0.8s 0.1s cubic-bezier(0.47, 0, 0.745, 0.715)
+    both;
 }
 
 /**
@@ -319,23 +330,24 @@ footer{
  * animation roll-in-blurred-left
  * ----------------------------------------
  */
- @keyframes roll-in-blurred-left {
-    0% {
-      transform: translateX(-1000px) rotate(-720deg);
-      filter: blur(50px);
-      opacity: 0;
-    }
-    100% {
-      transform: translateX(0) rotate(0deg);
-      filter: blur(0);
-      opacity: 1;
-    }
+@keyframes roll-in-blurred-left {
+  0% {
+    transform: translateX(-1000px) rotate(-720deg);
+    filter: blur(50px);
+    opacity: 0;
   }
-  
+  100% {
+    transform: translateX(0) rotate(0deg);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+
 // profile image animation
 .slide-in-blurred-top {
-	-webkit-animation: slide-in-blurred-top 1.2s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
-            animation: slide-in-blurred-top 1.2s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+  -webkit-animation: slide-in-blurred-top 1.2s cubic-bezier(0.23, 1, 0.32, 1)
+    both;
+  animation: slide-in-blurred-top 1.2s cubic-bezier(0.23, 1, 0.32, 1) both;
 }
 
 /**
@@ -343,260 +355,254 @@ footer{
  * animation slide-in-blurred-top
  * ----------------------------------------
  */
- @-webkit-keyframes slide-in-blurred-top {
-    0% {
-      -webkit-transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
-              transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
-      -webkit-transform-origin: 50% 0%;
-              transform-origin: 50% 0%;
-      -webkit-filter: blur(40px);
-              filter: blur(40px);
-      opacity: 0;
-    }
-    100% {
-      -webkit-transform: translateY(0) scaleY(1) scaleX(1);
-              transform: translateY(0) scaleY(1) scaleX(1);
-      -webkit-transform-origin: 50% 50%;
-              transform-origin: 50% 50%;
-      -webkit-filter: blur(0);
-              filter: blur(0);
-      opacity: 1;
-    }
+@-webkit-keyframes slide-in-blurred-top {
+  0% {
+    -webkit-transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+    transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+    -webkit-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
+    -webkit-filter: blur(40px);
+    filter: blur(40px);
+    opacity: 0;
   }
-  @keyframes slide-in-blurred-top {
-    0% {
-      -webkit-transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
-              transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
-      -webkit-transform-origin: 50% 0%;
-              transform-origin: 50% 0%;
-      -webkit-filter: blur(40px);
-              filter: blur(40px);
-      opacity: 0;
-    }
-    100% {
-      -webkit-transform: translateY(0) scaleY(1) scaleX(1);
-              transform: translateY(0) scaleY(1) scaleX(1);
-      -webkit-transform-origin: 50% 50%;
-              transform-origin: 50% 50%;
-      -webkit-filter: blur(0);
-              filter: blur(0);
-      opacity: 1;
-    }
+  100% {
+    -webkit-transform: translateY(0) scaleY(1) scaleX(1);
+    transform: translateY(0) scaleY(1) scaleX(1);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    opacity: 1;
   }
+}
+@keyframes slide-in-blurred-top {
+  0% {
+    -webkit-transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+    transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+    -webkit-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
+    -webkit-filter: blur(40px);
+    filter: blur(40px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0) scaleY(1) scaleX(1);
+    transform: translateY(0) scaleY(1) scaleX(1);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
 
 //arrow down animation
-  .shake-vertical {
-	-webkit-animation: shake-vertical 5s ease-in-out infinite both;
-	        animation: shake-vertical 5s ease-in-out infinite both;
+.shake-vertical {
+  -webkit-animation: shake-vertical 5s ease-in-out infinite both;
+  animation: shake-vertical 5s ease-in-out infinite both;
 }
 /**
  * ----------------------------------------
  * animation shake-vertical
  * ----------------------------------------
  */
- @-webkit-keyframes shake-vertical {
-    0%,
-    100% {
-      -webkit-transform: translateY(0);
-              transform: translateY(0);
-    }
-    10%,
-    30%,
-    50%,
-    70% {
-      -webkit-transform: translateY(-8px);
-              transform: translateY(-8px);
-    }
-    20%,
-    40%,
-    60% {
-      -webkit-transform: translateY(8px);
-              transform: translateY(8px);
-    }
-    80% {
-      -webkit-transform: translateY(6.4px);
-              transform: translateY(6.4px);
-    }
-    90% {
-      -webkit-transform: translateY(-6.4px);
-              transform: translateY(-6.4px);
-    }
+@-webkit-keyframes shake-vertical {
+  0%,
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
   }
-  @keyframes shake-vertical {
-    0%,
-    100% {
-      -webkit-transform: translateY(0);
-              transform: translateY(0);
-    }
-    10%,
-    30%,
-    50%,
-    70% {
-      -webkit-transform: translateY(-8px);
-              transform: translateY(-8px);
-    }
-    20%,
-    40%,
-    60% {
-      -webkit-transform: translateY(8px);
-              transform: translateY(8px);
-    }
-    80% {
-      -webkit-transform: translateY(6.4px);
-              transform: translateY(6.4px);
-    }
-    90% {
-      -webkit-transform: translateY(-6.4px);
-              transform: translateY(-6.4px);
-    }
+  10%,
+  30%,
+  50%,
+  70% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
   }
-  
-
-
-@media (min-width: 768px){
-    .jumbotron{
-        .container{
-            h1{
-                font-size: 3em;
-            }
-            p{
-                font-weight: 200;
-                font-size:1.5em;
-            }
-            ul{
-                li{
-                    margin: 0 .7em;
-                    font-size: x-large;
-                }
-            }
-        }
-    }
-    .accordion-body{
-        img{
-            height: 50px;
-            width: 50px;
-        }
-    }
-
-    .tab-content{
-        .tab-pane{            
-            .career-sections{
-                display: inline-flex;
-                .titles{
-                    min-width: 300px;
-                    h5{
-                        font-size: x-large;
-                    }
-                    h6{
-                        font-size: initial;
-                    }
-                }
-                .lists{
-                    padding-top: 1em;
-                    // width: 60%;   
-                    font-size: larger;
-                }
-            }
-            .education{
-                .titles{
-                    h5{
-                        font-size: x-large;
-                    }
-                    h6{
-                        font-size: initial;
-                    }
-            }
-            }
-        }
-    }
-
-    .resume{
-            .work-heading{
-                    .work-icon{
-                        margin-right: 1em;
-                            img{
-                                position: relative;
-                                height:25px;
-                                width:25px;
-                                top: 6px;
-                                left: 8px;
-                            }
-                    }
-                    .work-titles{
-
-                    }
-                    
-            }
-            .work-lists{
-
-            }
-    }
-
-    .canvasing{
-        position: relative;
-        .timeline{
-            hr.education-line{
-                align-items: stretch;
-                width: 2px;
-                height: 100%;
-                position: absolute;
-                z-index: 1;
-                margin-top: 0;
-            }
-        }
-    }
-
-    .education{
-        .education-heading{
-            .education-icon{
-                margin-right: 1em;
-            }
-            .education-titles{
-                width: -webkit-fill-available;
-                text-align: left;
-                    img{
-                        float: right;
-                    }
-            }
-        }
-    }
-
+  20%,
+  40%,
+  60% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+  80% {
+    -webkit-transform: translateY(6.4px);
+    transform: translateY(6.4px);
+  }
+  90% {
+    -webkit-transform: translateY(-6.4px);
+    transform: translateY(-6.4px);
+  }
+}
+@keyframes shake-vertical {
+  0%,
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  10%,
+  30%,
+  50%,
+  70% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+  20%,
+  40%,
+  60% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+  80% {
+    -webkit-transform: translateY(6.4px);
+    transform: translateY(6.4px);
+  }
+  90% {
+    -webkit-transform: translateY(-6.4px);
+    transform: translateY(-6.4px);
+  }
 }
 
-@media (min-width: 1024px){
-    .jumbotron{
-        .container{
-            h1{
-                font-size: 4em;
-            }
-            ul{
-                li{
-                    font-size: xx-large;
-                }
-            }
-            .profile-wrapper{
-                .profile1,
-                .profile2{
-                    height: 200px;
-                    width: 200px;
-                }
-            }
-        } 
-    }
-
-    .canvasing{
-        max-width: 900px;
-    }
-
-    .project{
-        max-width: 370px;
-        img{
-        max-height: 250px;
+@media (min-width: 768px) {
+  .jumbotron {
+    .container {
+      h1 {
+        font-size: 3em;
+      }
+      p {
+        font-weight: 200;
+        font-size: 1.5em;
+      }
+      ul {
+        li {
+          margin: 0 0.7em;
+          font-size: x-large;
         }
+      }
     }
+  }
+  .accordion-body {
+    img {
+      height: 50px;
+      width: 50px;
+    }
+  }
 
-    .myportfolio{
-        max-width: 1024px;
-        margin: 0 auto;
+  .tab-content {
+    .tab-pane {
+      .career-sections {
+        display: inline-flex;
+        .titles {
+          min-width: 300px;
+          h5 {
+            font-size: x-large;
+          }
+          h6 {
+            font-size: initial;
+          }
+        }
+        .lists {
+          padding-top: 1em;
+          // width: 60%;
+          font-size: larger;
+        }
+      }
+      .education {
+        .titles {
+          h5 {
+            font-size: x-large;
+          }
+          h6 {
+            font-size: initial;
+          }
+        }
+      }
     }
+  }
+
+  .resume {
+    .work-heading {
+      .work-icon {
+        margin-right: 1em;
+        img {
+          position: relative;
+          height: 25px;
+          width: 25px;
+          top: 6px;
+          left: 8px;
+        }
+      }
+      .work-titles {
+      }
+    }
+    .work-lists {
+    }
+  }
+
+  .canvasing {
+    position: relative;
+    .timeline {
+      hr.education-line {
+        align-items: stretch;
+        width: 2px;
+        height: 100%;
+        position: absolute;
+        z-index: 1;
+        margin-top: 0;
+      }
+    }
+  }
+
+  .education {
+    .education-heading {
+      .education-icon {
+        margin-right: 1em;
+      }
+      .education-titles {
+        width: -webkit-fill-available;
+        text-align: left;
+        img {
+          float: right;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .jumbotron {
+    .container {
+      h1 {
+        font-size: 4em;
+      }
+      ul {
+        li {
+          font-size: xx-large;
+        }
+      }
+      .profile-wrapper {
+        .profile1,
+        .profile2 {
+          height: 200px;
+          width: 200px;
+        }
+      }
+    }
+  }
+
+  .canvasing {
+    max-width: 900px;
+  }
+
+  .project {
+    max-width: 370px;
+    img {
+      max-height: 250px;
+    }
+  }
+
+  .myportfolio {
+    max-width: 1024px;
+    margin: 0 auto;
+  }
 }
